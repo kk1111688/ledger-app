@@ -1,0 +1,19 @@
+{
+  "name": "奶油记账本",
+  "short_name": "记账本",
+  "description": "温暖清新的个人记账应用，支持多账户、预算和统计",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FDF6EC",
+  "theme_color": "#D97706",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

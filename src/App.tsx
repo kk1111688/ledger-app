@@ -32,7 +32,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-cream-50 max-w-md mx-auto relative">
-      <div key={activePage} className="animate-fade-in">
+      <div key={activePage} className="animate-page-in">
         {renderPage()}
       </div>
       <BottomNav />

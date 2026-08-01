@@ -94,7 +94,7 @@ export default function Settings() {
       </div>
 
       {/* 分类管理 */}
-      <div className="px-4 mt-4">
+      <div className="px-4 mt-4 animate-stagger-1">
         <Card className="p-4">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2">
@@ -131,7 +131,7 @@ export default function Settings() {
       </div>
 
       {/* 数据管理 */}
-      <div className="px-4 mt-4">
+      <div className="px-4 mt-4 animate-stagger-2">
         <Card className="p-4">
           <h2 className="font-bold text-gray-800 mb-3">数据管理</h2>
           <div className="space-y-2">
@@ -176,7 +176,7 @@ export default function Settings() {
       </div>
 
       {/* 关于 */}
-      <div className="px-4 mt-4">
+      <div className="px-4 mt-4 animate-stagger-3">
         <Card className="p-4">
           <div className="flex items-center gap-2 mb-2">
             <Info className="w-4 h-4 text-cream-500" />

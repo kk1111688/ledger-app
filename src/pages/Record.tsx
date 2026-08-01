@@ -116,7 +116,7 @@ export default function Record({ editId, onBack }: RecordProps) {
       </div>
 
       {/* 金额输入 */}
-      <div className="px-4 mt-6">
+      <div className="px-4 mt-6 animate-stagger-1">
         <div className="text-center">
           <div className="flex items-center justify-center gap-1 mb-2">
             <span className="text-3xl font-bold text-cream-600">¥</span>
@@ -135,7 +135,7 @@ export default function Record({ editId, onBack }: RecordProps) {
       </div>
 
       {/* 分类选择 */}
-      <div className="px-4 mt-8">
+      <div className="px-4 mt-8 animate-stagger-2">
         <p className="text-xs font-semibold text-gray-400 mb-3 uppercase tracking-wider">选择分类</p>
         <div className="grid grid-cols-4 gap-3">
           {filteredCategories.map((cat) => {
@@ -161,7 +161,7 @@ export default function Record({ editId, onBack }: RecordProps) {
       </div>
 
       {/* 账户选择 */}
-      <div className="px-4 mt-6">
+      <div className="px-4 mt-6 animate-stagger-3">
         <p className="text-xs font-semibold text-gray-400 mb-3 uppercase tracking-wider">选择账户</p>
         <button
           onClick={() => setShowAccountPicker(true)}
@@ -179,7 +179,7 @@ export default function Record({ editId, onBack }: RecordProps) {
       </div>
 
       {/* 日期和备注 */}
-      <div className="px-4 mt-4 space-y-3">
+      <div className="px-4 mt-4 space-y-3 animate-stagger-4">
         <div className="bg-white rounded-2xl p-4 flex items-center gap-3 border border-gray-100">
           <Calendar className="w-5 h-5 text-cream-500 flex-shrink-0" />
           <input
@@ -202,7 +202,7 @@ export default function Record({ editId, onBack }: RecordProps) {
       </div>
 
       {/* 保存按钮 */}
-      <div className="px-4 mt-8">
+      <div className="px-4 mt-8 animate-stagger-5">
         <GradientButton
           fullWidth
           onClick={handleSave}

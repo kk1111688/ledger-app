@@ -114,7 +114,7 @@ export default function Home() {
           </div>
 
           {/* 总资产大卡 */}
-          <div className="bg-white/20 backdrop-blur-md rounded-2xl border border-white/25 p-4 mt-4">
+          <div className="bg-white/20 backdrop-blur-md rounded-2xl border border-white/25 p-4 mt-4 animate-stagger-1">
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center gap-2">
                 <Wallet className="w-4 h-4" />
@@ -154,7 +154,7 @@ export default function Home() {
       {/* 主体 */}
       <div className="px-4 -mt-4 space-y-4">
         {/* 预算概览卡 */}
-        <Card className="p-4">
+        <Card className="p-4 animate-stagger-2">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2">
               <PiggyBank className="w-5 h-5 text-cream-600" />
@@ -193,7 +193,7 @@ export default function Home() {
         </Card>
 
         {/* 快捷操作卡片 */}
-        <Card className="p-4">
+        <Card className="p-4 animate-stagger-3">
           <div className="grid grid-cols-4 gap-2">
             <button
               onClick={() => handleNavigate('record')}
@@ -236,12 +236,12 @@ export default function Home() {
 
         {/* 最近交易 */}
         {sortedTxs.length === 0 ? (
-          <Card className="p-10 text-center text-gray-400">
+          <Card className="p-10 text-center text-gray-400 animate-stagger-4">
             <PiggyBank className="w-16 h-16 mx-auto mb-3 text-cream-300" />
             <p className="text-sm">还没有交易，开始记账吧</p>
           </Card>
         ) : (
-          <Card className="p-0 overflow-hidden">
+          <Card className="p-0 overflow-hidden animate-stagger-4">
             <div className="flex items-center justify-between p-4 border-b border-gray-100">
               <div className="flex items-center gap-2">
                 <CalendarDays className="w-5 h-5 text-cream-600" />

@@ -64,7 +64,7 @@ export default function Budget() {
         </div>
 
         {/* 总预算卡片 */}
-        <div className="bg-cream-50 rounded-2xl p-4 border border-cream-100">
+        <div className="bg-cream-50 rounded-2xl p-4 border border-cream-100 animate-stagger-1">
           <div className="flex items-center justify-between mb-2">
             <div className="flex items-center gap-2">
               <Target className="w-4 h-4 text-cream-500" />
@@ -96,7 +96,7 @@ export default function Budget() {
       </div>
 
       {/* 分类预算列表 */}
-      <div className="px-4 mt-4">
+      <div className="px-4 mt-4 animate-stagger-2">
         <p className="text-xs font-semibold text-gray-400 mb-3 uppercase tracking-wider">分类预算</p>
         <div className="space-y-2">
           {categoryBudgets.map((cb) => (
@@ -147,7 +147,7 @@ export default function Budget() {
       </div>
 
       {/* 未设置预算的分类 */}
-      <div className="px-4 mt-4">
+      <div className="px-4 mt-4 animate-stagger-3">
         <p className="text-xs font-semibold text-gray-400 mb-3 uppercase tracking-wider">未设置预算的分类</p>
         <div className="grid grid-cols-4 gap-2">
           {categories

@@ -91,7 +91,7 @@ export default function Accounts() {
             <Plus className="w-5 h-5 text-cream-600" />
           </button>
         </div>
-        <div className="bg-cream-50 rounded-2xl p-4 border border-cream-100">
+        <div className="bg-cream-50 rounded-2xl p-4 border border-cream-100 animate-stagger-1">
           <div className="flex items-center gap-2 mb-1">
             <Wallet className="w-4 h-4 text-cream-500" />
             <span className="text-sm text-gray-500">总资产</span>
@@ -101,7 +101,7 @@ export default function Accounts() {
       </div>
 
       {/* 账户列表 */}
-      <div className="px-4 mt-4 space-y-3">
+      <div className="px-4 mt-4 space-y-3 animate-stagger-2">
         {accounts.map((acc) => {
           const balance = getAccountBalance(acc, transactions);
           return (
@@ -137,7 +137,7 @@ export default function Accounts() {
       </div>
 
       {/* 转账按钮 */}
-      <div className="px-4 mt-4">
+      <div className="px-4 mt-4 animate-stagger-3">
         <GradientButton variant="blue" fullWidth onClick={() => setShowTransfer(true)} className="gap-2">
           <ArrowRightLeft className="w-5 h-5" />
           账户转账

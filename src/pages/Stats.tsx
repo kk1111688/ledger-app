@@ -90,7 +90,7 @@ export default function Stats() {
       </div>
 
       {/* 收支概览 */}
-      <div className="px-4 mt-4">
+      <div className="px-4 mt-4 animate-stagger-1">
         <div className="grid grid-cols-3 gap-2">
           <Card className="p-3 text-center">
             <TrendingDown className="w-4 h-4 text-red-500 mx-auto mb-1" />
@@ -113,7 +113,7 @@ export default function Stats() {
       </div>
 
       {/* 趋势图 */}
-      <div className="px-4 mt-4">
+      <div className="px-4 mt-4 animate-stagger-2">
         <Card className="p-4">
           <div className="flex items-center justify-between mb-3">
             <h2 className="font-bold text-gray-800">收支趋势</h2>
@@ -127,7 +127,7 @@ export default function Stats() {
       </div>
 
       {/* 分类饼图 */}
-      <div className="px-4 mt-4">
+      <div className="px-4 mt-4 animate-stagger-3">
         <Card className="p-4">
           <div className="flex items-center justify-between mb-3">
             <h2 className="font-bold text-gray-800">分类占比</h2>
@@ -181,7 +181,7 @@ export default function Stats() {
 
       {/* Top 5 排名 */}
       {pieData.length > 0 && (
-        <div className="px-4 mt-4">
+        <div className="px-4 mt-4 animate-stagger-4">
           <Card className="p-4">
             <h2 className="font-bold text-gray-800 mb-3">{pieType === 'expense' ? '支出' : '收入'}排行 Top 5</h2>
             <div className="space-y-2">
